@@ -17,7 +17,7 @@ export default function Home() {
          backgroundImage: "url('/images/herored.jpg')",
        }}>
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-neon-green mb-4"
+          className="text-5xl md:text-7xl font-bold mb-4"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -74,7 +74,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Link href="/service">
+              <Link href="/services">
                 <button className="mt-auto bg-red-600 hover:bg-red-700 text-black font-semibold px-5 py-2 rounded-full text-sm cursor-pointer flex items-center gap-1 transition active:scale-90">
                   Learn More <ArrowRight size={16} />
                 </button>
@@ -93,7 +93,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Link href="/service">
+              <Link href="/services">
                 <button className="mt-auto bg-red-600 hover:bg-red-700 text-black font-semibold px-5 py-2 rounded-full text-sm cursor-pointer flex items-center gap-1 transition active:scale-90">
                   Learn More <ArrowRight size={16} />
                 </button>
@@ -201,7 +201,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
             >
-              <img src={tech.icon} alt={tech.name} width={70} height={70} className="rounded-full"/>
+              <Image src={`/${tech.icon}`} alt={tech.name} width={70} height={70} className="rounded-full" />
               <p className="text-lg text-gray-300">{tech.name}</p>
             </motion.div>
           ))}
@@ -216,11 +216,7 @@ export default function Home() {
       
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition hover:shadow-lg hover:shadow-red-600/50">
-            <img
-              src="images/blog1.png"
-              alt="Blog 1"
-              className="w-full h-52 object-cover"
-            />
+           <Image src="/images/blog1.png" alt="Blog 1" width={400} height={208} className="w-full h-52 object-cover"/>
             <div className="p-5">
               <h3 className="text-xl font-semibold text-neon-green mb-2">Modern Web Design</h3>
               <p className="text-gray-300 text-sm mb-4">
@@ -233,11 +229,7 @@ export default function Home() {
           </div>
       
           <div className="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition hover:shadow-lg hover:shadow-red-600/50">
-            <img
-              src="images/fastred.jpg"
-              alt="Blog 2"
-              className="w-full h-52 object-cover"
-            />
+            <Image src="/images/fastred.jpg" alt="Blog 2" width={400} height={208} className="w-full h-52 object-cover"/>
             <div className="p-5">
               <h3 className="text-xl font-semibold text-neon-green mb-2">Boosting Performance</h3>
               <p className="text-gray-300 text-sm mb-4">
@@ -250,11 +242,7 @@ export default function Home() {
           </div>
       
           <div className="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition hover:shadow-lg hover:shadow-red-600/50">
-            <img
-              src="images/secure.jpg"
-              alt="Blog 3"
-              className="w-full h-52 object-cover"
-            />
+           <Image src="/images/secure.jpg" alt="Blog 3" width={400} height={208} className="w-full h-52 object-cover"/>
             <div className="p-5">
               <h3 className="text-xl font-semibold text-neon-green mb-2">Web Security Essentials</h3>
               <p className="text-gray-300 text-sm mb-4">
@@ -339,17 +327,14 @@ export default function Home() {
        }}
       >
       <div className="max-w-4xl mx-auto text-center space-y-8">
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          Let's Build Something Great Together
-        </h2>
-        <p className="text-lg md:text-xl text-gray-400">
-          Have an idea or project in mind? We’d love to hear from you.
-        </p>
+          <h2>Let&apos;s Build Something Great Together</h2>
+          <p>We&apos;d love to hear from you.</p>
+
 
         <div className="flex justify-center">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-80"
+            className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-90"
           >
             Contact Us <ArrowRight size={22} />
           </Link>

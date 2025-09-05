@@ -56,7 +56,7 @@ const Contact = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          We'd love to hear from you. Fill out the form or contact us directly.
+          We&apos;d love to hear from you. Fill out the form or contact us directly.
         </motion.p>
       </section>
 
@@ -105,7 +105,7 @@ const Contact = () => {
         <div className="max-w-md mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg space-y-6 text-center bg-cover"
           style={{ backgroundImage: "url('/images/contact6.jpg')" }}>
           
-          <Mail className="mx-auto text-red-500 w-13 h-13 mb-8 bg-gray-100 rounded-2xl p-1"/>
+          <Mail className="mx-auto text-red-500 w-12 h-12 mb-8 bg-gray-100 rounded-2xl p-1" />
 
           <form ref={formRef} onSubmit={sendEmail} className="space-y-6 text-left">
             <div className="grid md:grid-cols-2 gap-6">

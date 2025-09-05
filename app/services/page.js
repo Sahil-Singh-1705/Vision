@@ -7,7 +7,7 @@ import { ArrowRight, Phone, Mail, } from 'lucide-react';
 
 const Services = () => {
   return (
-    <main className="bg-blacl text-whitee font-sans">
+    <main className="bg-black text-white font-sans">
 
       <section
         className="h-[90vh] flex flex-col justify-center items-center text-center px-4 bg-cover bg-center bg-no-repeat"
@@ -57,11 +57,14 @@ const Services = () => {
             className="flex justify-center"
           >
             <div className="bg-gray-900 p-2 rounded-2xl shadow-lg hover:shadow-red-600/50 transition hover:scale-105">
-              <img
-                src="/images/redworld.avif"
-                alt="Web Development"
-                className="w-105 h-80 object-cover rounded-xl"
+              <Image
+               src="/images/redworld.avif"
+               alt="Web Development"
+               width={600}
+               height={320}
+               className="w-[420px] h-80 object-cover rounded-xl"
               />
+
             </div>
           </motion.div>
         </div>
@@ -76,10 +79,12 @@ const Services = () => {
             className="flex justify-center"
           >
             <div className="bg-gray-900 p-2 rounded-2xl shadow-lg hover:shadow-red-600/50 transition hover:scale-105">
-              <img
-                src="/images/section6.jpg"
-                alt="UI/UX Design"
-                className="w-full h-80 object-cover rounded-xl"
+              <Image
+               src="/images/section6.jpg"
+               alt="UI/UX Design"
+               width={1200}
+               height={320}
+               className="w-full h-80 object-cover rounded-xl"
               />
             </div>
           </motion.div>
@@ -127,10 +132,12 @@ const Services = () => {
             className="flex justify-center"
           >
             <div className="bg-gray-900 p-2 rounded-2xl shadow-lg hover:shadow-red-600/50 transition hover:scale-105">
-              <img
-                src="/images/lock.jpg"
-                alt="Security & Optimization"
-                className="w-105 h-80 object-cover rounded-xl"
+             <Image
+               src="/images/lock.jpg"
+               alt="Security & Optimization"
+               width={420}   
+               height={320}
+               className="w-[420px] h-80 object-cover rounded-xl"
               />
             </div>
           </motion.div>
@@ -144,17 +151,13 @@ const Services = () => {
         backgroundImage: "url('/images/contact-3.jpg')",
       }}>
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-              Let's Build Something Great Together
-            </h2>
-            <p className="text-lg md:text-xl text-gray-200">
-              Have an idea or project in mind? We’d love to hear from you.
-            </p>
-  
+            <h2>Let&apos;s Build Something Great Together</h2>
+            <p>We&apos;d love to hear from you.</p>
+
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-80"
+                className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-90"
               >
                 Contact Us <ArrowRight size={22} />
               </Link>

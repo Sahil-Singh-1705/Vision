@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from "next/image";
 import { motion } from 'framer-motion';
 import { LayoutTemplate, ShieldCheck, Zap, BadgeCheck, Paintbrush, Rocket, CircleUserRound, Mail, Phone, ArrowRight } from 'lucide-react';
 
@@ -61,11 +62,13 @@ const About = () => {
               className="flex justify-center"
             >
               <div className="bg-gray-900 p-2 rounded-2xl shadow-lg hover:shadow-red-600/50 transition hover:scale-105">
-                <img
-                  src="/images/r-red.jpg" 
-                  alt="Our Mission"
-                  className="w-full h-80 object-cover rounded-xl"
-                />
+               <Image
+                src="/images/r-red.jpg"
+                alt="Our Mission"
+                width={1200}
+                height={320}
+                className="w-full h-80 object-cover rounded-xl"
+              />
               </div>
             </motion.div>
           </div>
@@ -216,17 +219,13 @@ const About = () => {
         backgroundImage: "url('/images/contact-3.jpg')",
       }}>
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                Let's Build Something Great Together
-              </h2>
-              <p className="text-lg md:text-xl text-gray-400">
-                Have an idea or project in mind? We’d love to hear from you.
-              </p>
-      
+              <h2>Let&apos;s Build Something Great Together</h2>
+              <p>We&apos;d love to hear from you.</p>
+
               <div className="flex justify-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-80"
+                  className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-800 text-white text-lg font-medium py-3 px-6 rounded-full transition duration-300 active:scale-90"
                 >
                   Contact Us <ArrowRight size={22} />
                 </Link>
