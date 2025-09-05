@@ -46,8 +46,8 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-neon-green mb-6">About Us</h2>
           <p className="text-gray-300 text-lg md:text-xl mb-8">
-            At <span className="text-white font-semibold">Vision</span>, we’re dedicated to building high-performance, beautifully designed, and secure web experiences. Our mission is to empower developers and businesses with tools that scale, impress, and perform at their best — whether you're building a portfolio or a product at scale.
-          </p>
+           At <span className="text-white font-semibold">Vision</span>, we’re dedicated to building high-performance, beautifully designed, and secure web experiences. Our mission is to empower developers and businesses with tools that scale, impress, and perform at their best — whether you&apos;re building a portfolio or a product at scale.
+          </p> 
           <Link href="/about" className="flex justify-center">
             <button className="bg-red-600 text-black font-semibold px-6 py-3 rounded-full text-lg gap-1 transition flex items-center cursor-pointer hover:scale-105 hover:bg-red-700 active:bg-red-800 active:scale-90">
               Know More<ArrowRight />
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="p-5">
               <h3 className="text-xl font-semibold text-neon-green mb-2">Web Security Essentials</h3>
               <p className="text-gray-300 text-sm mb-4">
-               Explore top strategies to protect your users' data and make your applications more secure against threats and breaches.
+                Explore top strategies to protect your users&apos; data and make your applications more secure against threats and breaches.
               </p>
               <a href="#" className="text-red-500 hover:underline hover:underline-offset-2 text-sm">
                 Read more →

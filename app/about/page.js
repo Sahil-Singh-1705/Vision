@@ -29,7 +29,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          At <span className="text-white font-bold">Vision</span>, we’re redefining how the modern web is built — combining <span className="text-red-400 font-bold">Speed, Security, and Stunning Design</span> into one seamless platform.
+          At <span className="text-white font-bold">Vision</span>, We&apos;re how the modern web is built — combining <span className="text-red-400 font-bold">Speed, Security, and Stunning Design</span> into one seamless platform.
         </motion.p>
       </section>
 
@@ -152,10 +152,12 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.3 }}
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-60 object-cover-full bg-red-950"
+                <Image
+                 src={item.image}
+                 alt={item.title}
+                 width={600}
+                 height={240}
+                 className="w-full h-60 object-cover bg-red-950"
                 />
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-semibold mb-2 text-white">
@@ -174,7 +176,7 @@ const About = () => {
              Our Values
             </h2>
             <p className="text-gray-400 mt-4 text-lg">
-              We’re driven by principles that make our work impactful and meaningful.
+              We&apos;re driven by principles that make our work impactful and meaningful.
             </p>
           </div>
         
